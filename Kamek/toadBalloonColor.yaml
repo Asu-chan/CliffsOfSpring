@@ -1,0 +1,15 @@
+---
+source_files: [../src/toadBalloonColor.S]
+hooks:
+
+  - name: ToadBalloonFirstColor
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x800155D8
+    target_func: 'ToadBalloonFirstColor'
+
+  - name: ToadBalloonSecondColor
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x80015620
+    target_func: 'ToadBalloonSecondColor'

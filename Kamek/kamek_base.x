@@ -1833,6 +1833,14 @@ SECTIONS {
 	spawnCoinJump__7StageE4FRC4VEC3iii = 0x80066630;
 	sub_800757B0__14collisionMgr_cFP4VEC3PfUcic = 0x800757B0;
 
+	ClearR5FromByteInWorldAvailableArrayAt0x32ofWorldData = 0x800CE470;
+	OrR5AgaginstByteFromWorldAvailableArrayAt0x32ofWorldData = 0x800CE450;
+	AssembleDefaultScWorldMapSettings = 0x80102B50;
+
+	SaveCurrentData_Maybe = 0x800E1780;
+	create_hash_for_savefile = 0x800E05A0;
+	WriteSavefileToRegularBuffer = 0x800E0630;
+
 
 	.text : {
 		FILL (0)

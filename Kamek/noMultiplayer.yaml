@@ -1,0 +1,34 @@
+---
+source_files: [../src/noMultiplayer.S]
+hooks:
+  - name: NoMoreUpPressOnFSEL
+    type: patch
+    addr_pal: 0x80783C64
+    data: '70000000'
+
+  - name: NoMoreDownPressOnFSEL
+    type: patch
+    addr_pal: 0x80783D00
+    data: '70000000'
+
+  - name: NoMoreUpPressOnPSEL
+    type: patch
+    addr_pal: 0x807AC7EC
+    data: '70000000'
+
+  - name: NoMoreDownPressOnPSEL
+    type: patch
+    addr_pal: 0x807AC854
+    data: '70000000'
+
+  - name: NoMoreUpMultiPressOnWMAPPause
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x8077B07C
+    target_func: 'NoMoreUpMultiPressOnWMAPPause'
+
+  - name: NoMoreDownMultiPressOnWMAPPause
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x8077B0B8
+    target_func: 'NoMoreDownMultiPressOnWMAPPause'
