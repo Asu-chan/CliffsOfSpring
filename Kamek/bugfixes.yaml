@@ -81,7 +81,7 @@ hooks:
 
   - name: DisableToadLetter
     type: nop_insn
-    area_pal: [0x80903DB8, 0x80903DB8]
+    area_pal: [0x80903DB8, 0x80903DCC]
 
   - name: DisableToadLetter
     type: patch

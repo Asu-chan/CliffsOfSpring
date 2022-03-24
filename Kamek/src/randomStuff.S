@@ -25,7 +25,7 @@ ReplaceExceptionOccurred:
 .data
 .align 4
 NewExceptionOccurred:
-.string "Whoops! SMCoS 1.0.0 has crashed.\nPlease take a screenshot of the info below\nand send it to Asu-chan#2929 on discord.\nYou can scroll through this report using the D-Pad.\n"
+.string "Whoops! SMCoS 1.0.2 has crashed.\nPlease take a screenshot of the info below\nand send it to Asu-chan#2929 on discord.\nYou can scroll through this report using the D-Pad.\n"
 
 .global Rrun
 Rrun: .string "Rrun"
